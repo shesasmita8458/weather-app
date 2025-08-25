@@ -1,13 +1,102 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e3d3fc, #f6e3fa);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  padding: 20px;
+}
+
+.weather-card {
+  background: linear-gradient(to bottom, #3a0ca3, #5f0f40);
+  padding: 30px 25px;
+  border-radius: 25px;
+  color: white;
+  max-width: 340px;
+  width: 100%;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  position: relative;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 10px 15px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.search-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-bar i {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.weather-icon {
+  width: 90px;
+  margin: 15px auto;
+  display: block;
+}
+
+.weather-temp {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.weather-desc {
+  text-align: center;
+  font-size: 18px;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+.forecast-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 15px;
+  backdrop-filter: blur(6px);
+}
+
+.forecast-item {
+  text-align: center;
+  color: white;
+  flex: 1;
+}
+
+.forecast-item .hour {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #eee;
+}
+
+.forecast-item img {
+  width: 32px;
+  height: 32px;
+}
+
+.forecast-item .temp {
+  font-size: 14px;
+  margin-top: 4px;
 }
